@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #ffffff;
+  --font: "Roboto", sans-serif; 
+  --color-bg-button: #646cff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: var(--font);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
