@@ -1,9 +1,7 @@
 <script setup>
-const d = new Date();
+import Button from "./components/Button.vue";
 </script>
 
 <template>
-  Date: {{ d.getDate() }} - {{ d.getMonth() }} - {{ d.getFullYear() }}
+  <Button> Начать игру </Button>
 </template>
-
-<style scoped></style>
