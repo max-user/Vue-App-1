@@ -1,6 +1,6 @@
 <script setup>
 const { lable = "Не задан", stat } = defineProps({
-  lable: String,
+  label: String,
   stat: String,
 });
 </script>

@@ -18,8 +18,8 @@
   color: var(--primary);
   cursor: pointer;
   height: 53px;
-  display: flex;
   width: 100%;
+  display: flex;
   gap: 9px;
   align-items: center;
   justify-content: center;
