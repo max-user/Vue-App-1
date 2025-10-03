@@ -1,19 +1,27 @@
 <script setup>
+import { ref } from "vue";
 import Button from "./Button.vue";
 import iconLocation from "../icon/iconLocation.vue";
+
+let isEdited = ref(false);
 
 const emit = defineEmits({
   selectCity(payload) {
     return payload;
   },
 });
+
 function select() {
-  emit("selectCity", "London");
+  isEdited.value = false;
+}
+function edit() {
+  isEdited.value = true;
 }
 </script>
 <template>
-  <Button @click="select()"> <iconLocation /> Изменить город </Button>
+  {{ isEdited }}
+  <Button @click="edit()"> <iconLocation /> Изменить город </Button>
   <input type="button" value="Вася" />
-  <Button> Сохранить </Button>
+  <Button @click="select()"> Сохранить </Button>
 </template>
 <style scoped></style>
