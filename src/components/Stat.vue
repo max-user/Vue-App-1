@@ -1,12 +1,12 @@
 <script setup>
-const { lable = "Не задан", stat } = defineProps({
+const { label = "Не задан", stat } = defineProps({
   label: String,
   stat: String,
 });
 </script>
 <template>
   <div class="stat">
-    <div class="stat-name">{{ lable }}</div>
+    <div class="stat-name">{{ label }}</div>
     <div class="stat-value">{{ stat }}</div>
   </div>
 </template>

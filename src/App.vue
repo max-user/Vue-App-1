@@ -3,12 +3,8 @@ import Stat from "./components/Stat.vue";
 import SitySelect from "./components/SitySelect.vue";
 
 const data = {
-  lable: "Влажность",
+  label: "Влажность",
   stat: "90%",
-};
-const data2 = {
-  lable: "Осадки",
-  stat: "0%",
 };
 
 function getCity(city) {
@@ -18,8 +14,8 @@ function getCity(city) {
 
 <template>
   <main class="main">
-    <Stat :lable="data.lable" v-bind:stat="data.stat"></Stat>
-    <Stat v-bind="data2"></Stat>
+    <Stat v-bind="data"></Stat>
+    <Stat v-bind:label="'Осадки'" v-bind:stat="'10%'"></Stat>
     <SitySelect @select-city="getCity" />
   </main>
 </template>
